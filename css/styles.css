@@ -1,0 +1,127 @@
+
+/* ---------------- GENEREL STYLING ---------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Helvetica Neue', 'Roboto', Times, serif; /* Valg af font og sekundær font, der sikrer, at skriften stadig er sans serif*/
+    margin: 0; /* Nulstiller al deafult margin */
+    padding: 0; /* Nulstiller al deafult padding */
+}
+
+:root {
+    --primaerFarve: #000; /* Bruges som primær skriftfarve*/
+    --sekundaerFarve: #0F11CF; /* Bruges til mindre elementer*/
+}
+
+body {
+    margin-left: 162px; /* Alt indhold placeres minimum 162px fra venstre kant som udgangspunkt*/
+    margin-right: 162px; /* Alt indhold placeres minimum 162px fra højre kant som udgangspunkt*/
+}
+
+a {
+    text-decoration: none;
+    color: var(--primaerFarve);
+}
+
+/* ---------------- STYLING AF HEADER ---------------- */
+
+.menulinje {
+    display: flex; 
+    justify-content: space-between; /* Logo og navigationslinje placeres*/
+    align-items: center; /* Logo og navigationslinje placeres med samme midtpunkt horisontalt */
+    margin-bottom: 19px; /* Skaber en afstand på 19px til linjen under neden */
+    margin-top: 70px;
+}
+
+.logo {
+    font-size: 50px;
+    display: flex; /* Efternavn og punktum er på samme linje */
+}
+
+.punktum {
+    color: var(--sekundaerFarve); /* Alle punktummer med klassen punktum får farven, sekundaerFarve*/
+    align-self: flex-end; /* Punktummet bliver placeret i bunden af den flex-beholder*/
+}
+
+.navigationslinje {
+    display: flex; /* Projekter, Om og Kontakt placeres på linje */
+    font-size: 35px; /* Størrelsen på linksene defineres til 35px */
+    gap: 80px; /* Der er 80 px mellem hvert link */
+}
+
+.navigationslinje a:hover {
+    color: var(--sekundaerFarve); /* Angiver farven ved hover */
+    /* font-weight: bold; */
+    /* text-decoration: underline 2px solid; */
+    cursor: pointer;
+}
+
+.horisontal-linje{
+    color: var(--sekundaerFarve); /* Angiver farven på stregen*/
+    border: 1px solid; /* Tykkelsen på stregen */
+    margin: 0 -92px 95px; /* Body ha stylingen: margin-left: 162px og margin-right: 162px;. Linjen skal være 70px fra hver kant i stedet og derfor er margin-left og margin-right i minus 92, da 162px - 92px=70px */
+}
+
+/* ---------------- STYLING AF FOOTER ---------------- */
+
+.horisontal-linje-footer {
+    color: var(--sekundaerFarve); /* Angiver farven på stregen*/
+    border: 1px solid; /* Tykkelsen på stregen */
+    margin: 82px -92px 48px; /* Body ha stylingen: margin-left: 162px og margin-right: 162px;. Linjen skal være 70px fra hver kant i stedet og derfor er margin-left og margin-right i minus 92, da 162px - 92px=70px */
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerIkonOgTekst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.footerIkonOgTekst img {
+    width: 82px; /* Giver alle ikoner i footer den samme bredde */
+    height: 82px;
+}
+
+.mailFooterTekst {
+    margin-top: -5px; /* Sikrer, at teksten står på linje med andet tekst i footer*/
+}
+
+
+/* ---------------- STYLING AF INDEX ---------------- */
+
+#forsideIndhold {
+    display: flex; /* Placerer billedet og tekst+pile på en horisontal linje */
+    justify-content: space-between; /* Skaber afstand imellem indhold, så det placeres i hver sin side */
+    align-items: flex-end; /* Placerer al indhold (her med fokus på teksten) på den nederste linje i flexboksen */
+    width: 100%;
+}
+
+#forsideNavigation {
+    display: flex;
+    flex-direction: column; /* Links og pile placeres oven på hinanden */
+    gap: 15px; /* Skaber en afstand mellem top og bund for hvert link */
+    font-size: 80px; /* Angiver størrelsen på fonten */
+}
+
+.forsidelinkOgPil {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.forsidelinkOgPil a {
+    justify-self: start;
+}
+
+.forsidelinkOgPil img {
+    justify-self: end;
+}
+
