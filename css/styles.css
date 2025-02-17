@@ -212,6 +212,10 @@ a {
     font-size: 35px;
 }
 
+.linkTilEkstern {
+    color: var(--sekundaerFarve);
+}
+
 /* ---------------- STYLING AF OM ---------------- */
 
 .broedTekstOm{
