@@ -173,7 +173,6 @@ a {
 }
 
 /* ---------------- STYLING AF PROJEKT ---------------- */
-
 .angivelseAfGruppenavne, .listeelement { /* Listeelement bruges i side om.html til syv ting om mig */
     display: flex;
     gap: 5px;
