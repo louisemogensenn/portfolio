@@ -24,6 +24,24 @@ a {
     color: var(--primaerFarve);
 }
 
+.punktum {
+    color: var(--sekundaerFarve); /* Skifter farven på punktum */
+}
+
+.overskriftPaaSide {
+    display: flex; /* Denne linje placerer overskrift og punktum tæt på hinanden */
+    font-size: 99px;
+    margin-bottom: 55px;
+}
+
+.bindestreg {
+    border: none; /* Fjerner border */
+    background-color: var(--sekundaerFarve); /* Angiver farven på linjen */
+    height: 2px; /* Angiver bindestregens tykkelse */
+    width: 31px; /* Angiver længden på bindestregen */
+    align-self: center; /* Placerer bindestregen med samme horisontale midterpunkt som teksten */
+}
+
 /* ---------------- STYLING AF HEADER ---------------- */
 
 .menulinje {
@@ -36,12 +54,8 @@ a {
 
 .logo {
     font-size: 50px;
-    display: flex; /* Efternavn og punktum er på samme linje */
-}
-
-.punktum {
-    color: var(--sekundaerFarve); /* Alle punktummer med klassen punktum får farven, sekundaerFarve*/
-    align-self: flex-end; /* Punktummet bliver placeret i bunden af den flex-beholder*/
+    display: flex; /* Sørger for, at elementerne er på samme række */
+    align-items: flex-end; /* Flytter alle elementer NED, så de flygter på grundlinjen */
 }
 
 .navigationslinje {
@@ -57,7 +71,7 @@ a {
     cursor: pointer;
 }
 
-.horisontal-linje{
+.horisontal-linje, .horisontal-linje-footer  {
     color: var(--sekundaerFarve); /* Angiver farven på stregen*/
     border: 1px solid; /* Tykkelsen på stregen */
     margin: 0 -92px 95px; /* Body ha stylingen: margin-left: 162px og margin-right: 162px;. Linjen skal være 70px fra hver kant i stedet og derfor er margin-left og margin-right i minus 92, da 162px - 92px=70px */
@@ -66,11 +80,8 @@ a {
 /* ---------------- STYLING AF FOOTER ---------------- */
 
 .horisontal-linje-footer {
-    color: var(--sekundaerFarve); /* Angiver farven på stregen*/
-    border: 1px solid; /* Tykkelsen på stregen */
-    margin: 82px -92px 48px; /* Body ha stylingen: margin-left: 162px og margin-right: 162px;. Linjen skal være 70px fra hver kant i stedet og derfor er margin-left og margin-right i minus 92, da 162px - 92px=70px */
+    margin: 82px -92px 48px; /* Afstanden mellem top- og bundelementer er anderledes for footer-linjen */
 }
-
 .footer {
     display: flex;
     flex-direction: row;
@@ -93,7 +104,6 @@ a {
 .mailFooterTekst {
     margin-top: -5px; /* Sikrer, at teksten står på linje med andet tekst i footer*/
 }
-
 
 /* ---------------- STYLING AF INDEX ---------------- */
 
@@ -124,4 +134,150 @@ a {
 .forsidelinkOgPil img {
     justify-self: end;
 }
+
+/* ---------------- STYLING AF PROJEKTER ---------------- */
+.indholdProjekter {
+    display: flex; /* Billedet samt tekststykker placeres på linje */
+}
+
+.indholdProjekter img {
+    width: 535px; /* Billedet til hvert projekt får en bestemt størrelse */
+    height: 314px;
+}
+
+.linjeMellemProjekter {
+    border: 0.5px solid; /* Tykkelsen på stregen */
+    margin: 62px 0; /* Giver linjen en margin (pladsen omkring sig) på 62px */
+}
+
+.tekstProjekter {
+    margin-left: 118px; /* Tekststykkerne placeres 118px fra deres tilhørende billede */
+}
+
+.tekstProjekter h3 {
+    font-size: 35px; /* Overskrifterne for hvert projekt får en skriftstørrelse */
+}
+
+.tekstProjekter p {
+    font-size: 25px; /* Underoverskrifterne får en skriftstørrelse */
+}
+
+.pilProjekter {
+    width: 54px; /* Angiver pilens bredde */
+    float: right; /* Pilen placeres i højre side af skærmen */
+    margin-top: -27px; /* Placerer pilen på samme grundlinje som billedet */
+}
+
+.projektBillede {
+    border: 2px solid var(--sekundaerFarve); /* Laver en blå kant omkring billedet i oversigten over projekter*/
+}
+
+/* ---------------- STYLING AF PROJEKT ---------------- */
+
+.angivelseAfGruppenavne, .listeelement { /* Listeelement bruges i side om.html til syv ting om mig */
+    display: flex;
+    gap: 5px;
+}
+
+#projektAarhusJazzFestival, #projektSteno, #projektNippon {
+    cursor: pointer;
+}
+
+.projektbilleder {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 110px;
+}
+
+.projektbilleder img {
+    width: 600px;
+}
+
+.overskriftOgTekstProjekt h3 {
+    font-size: 35px;
+}
+
+.overskriftOgTekstProjekt p {
+    font-size: 25px;
+}
+
+.projektbillederIphone {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 82px;
+    margin-bottom: 110px;
+}
+
+.projektRoller {
+    margin-top: 110px;
+    font-size: 35px;
+}
+
+/* ---------------- STYLING AF OM ---------------- */
+
+.broedTekstOm{
+    font-size: 25px;
+}
+
+#billedegalleri img {
+    width: 384px; /* Bredden sætter på følgende udregning: width = 1512 (skærmens bredde) - (162*2) (margin i begge sider) - (18*2) (ønsket afstand mellem billeder) / 3 (antal billeder)*/
+}
+
+.billederPaaLinje {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 0;
+}
+
+.listeelement p {
+    font-size: 25px;
+    gap: 10px;
+}
+
+#omMig {
+    margin-bottom: 61px;
+}
+
+#omMig h3 {
+    font-size: 35px;
+}
+
+#beskrivelseOgBillede {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.figur {
+    width: 300px;
+}
+
+/* ---------------- STYLING AF KONTAKT ---------------- */
+.ikonOgTekst {
+    display: flex; /* Placerer ikon og tekst på linje */
+    align-items: center; /* Sikrer at ikonet og teksten har samme horisontale midterpunkt */
+    gap: 40px; /* Placerer ikon og tekst med 40px imellem sig */
+}
+
+.ikonOgTekst img {
+    margin-bottom: 49px;
+}
+
+.ikonOgTekst p, #kontaktIndhold p {
+    font-size: 25px;
+    margin-bottom: 49px;
+}
+
+#kontaktIndhold {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 49px;
+}
+
+#kontaktbillede {
+    width: 430px;
+    align-self: flex-start; /* Holder billedet i toppen */
+}
+
 
