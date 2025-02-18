@@ -117,6 +117,10 @@ a {
     align-items: flex-end; /* Placerer al indhold (her med fokus på teksten) på den nederste linje i flexboksen */
 }
 
+#forsidebillede {
+    width: 500px;
+}
+
 #forsideNavigation {
     display: flex; /* Placerer elementerne på linje*/
     flex-direction: column; /* Links og pile placeres oven på hinanden */
