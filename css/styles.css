@@ -31,7 +31,6 @@ a {
 .overskriftPaaSide {
     display: flex; /* Denne linje placerer overskrift og punktum tæt på hinanden */
     font-size: 99px;
-    margin-bottom: 55px;
 }
 
 .bindestreg {
@@ -173,7 +172,7 @@ a {
 }
 
 /* ---------------- STYLING AF PROJEKT ---------------- */
-.angivelseAfGruppenavne, .listeelement { /* Listeelement bruges i side om.html til syv ting om mig */
+.listeelement { /* Listeelement bruges i side om.html til syv ting om mig */
     display: flex;
     gap: 5px;
 }
@@ -185,11 +184,17 @@ a {
 .projektbilleder {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 110px;
+    margin-top: 35px;
+    margin-bottom: 90px;
 }
 
 .projektbilleder img {
     width: 600px;
+}
+
+#ipadBillederSteno {
+    width: 300px;
+    gap: 120px;
 }
 
 .overskriftOgTekstProjekt h3 {
@@ -216,13 +221,18 @@ a {
     color: var(--sekundaerFarve);
 }
 
+#billedegalleriSteno img{
+    height: 500px;
+    width: 388px;
+}
+
 /* ---------------- STYLING AF OM ---------------- */
 
 .broedTekstOm{
     font-size: 25px;
 }
 
-#billedegalleri img {
+#billedegalleriOm img {
     width: 384px; /* Bredden sætter på følgende udregning: width = 1512 (skærmens bredde) - (162*2) (margin i begge sider) - (18*2) (ønsket afstand mellem billeder) / 3 (antal billeder)*/
 }
 
@@ -245,7 +255,7 @@ a {
     font-size: 35px;
 }
 
-#beskrivelseOgBillede {
+.beskrivelseOgBillede {
     display: flex;
     justify-content: space-between;
     align-items: end;
