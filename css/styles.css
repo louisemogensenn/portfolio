@@ -43,6 +43,10 @@ a {
 
 /* ---------------- STYLING AF HEADER ---------------- */
 
+#burgermenu {
+    display: none;
+}
+
 .menulinje {
     display: flex; 
     justify-content: space-between; /* Logo og navigationslinje placeres*/
@@ -81,6 +85,15 @@ a {
     gap: 5px; /* Skaber en afstand mellem bindestreg og tekst */
 }
 
+@media (max-width: 390px) {
+    #burgermenu {
+        display: block;
+    }
+
+    .navigationslinje {
+        display: none;
+    }
+}
 
 /* ---------------- STYLING AF FOOTER ---------------- */
 
@@ -132,6 +145,22 @@ a {
     display: flex; /* Placerer elementerne på linje*/
     justify-content: space-between; /* Sikrer at pil og tekst står i hver sin ende, så teksterne starter samme sted og pilene slutter samme sted */
     gap: 30px; /* Skaber afstand mellem pil og tekst på forsiden */
+}
+
+@media (max-width: 390px) {
+    #forsideIndhold {
+        flex-direction: column; /* Indhold placeres i kolonne i stedet for række */
+        align-items: center; /* Indholdet placeret i midten af siden */
+    }
+
+    #forsidebillede {
+        width: 656px; /* Bredden på siden, hvor indholdet ønskes */
+    }
+
+    .forsidelinkOgPil {
+        width: 656px; /* Sikrer, at teksten og pilen fylder hele muligheden*/
+        justify-content: space-between;
+    }
 }
 
 /* ---------------- STYLING AF PROJEKTER ---------------- */
