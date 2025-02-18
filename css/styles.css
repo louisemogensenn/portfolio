@@ -48,11 +48,11 @@ a {
     justify-content: space-between; /* Logo og navigationslinje placeres*/
     align-items: center; /* Logo og navigationslinje placeres med samme midtpunkt horisontalt */
     margin-bottom: 19px; /* Skaber en afstand på 19px til linjen under neden */
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .logo {
-    font-size: 50px;
+    font-size: 40px;
     display: flex; /* Sørger for, at elementerne er på samme række */
     align-items: flex-end; /* Flytter alle elementer NED, så de flygter på grundlinjen */
 }
@@ -60,7 +60,7 @@ a {
 .navigationslinje {
     display: flex; /* Projekter, Om og Kontakt placeres på linje */
     font-size: 35px; /* Størrelsen på linksene defineres til 35px */
-    gap: 80px; /* Der er 80 px mellem hvert link */
+    gap: 50px; /* Der er 80 px mellem hvert link */
 }
 
 .navigationslinje a:hover {
@@ -135,6 +135,10 @@ a {
 }
 
 /* ---------------- STYLING AF PROJEKTER ---------------- */
+#topProjekt {
+    margin-top: 50px;
+}
+
 .indholdProjekter {
     display: flex; /* Billedet samt tekststykker placeres på linje */
 }
