@@ -41,15 +41,19 @@ a {
     align-self: center; /* Placerer bindestregen med samme horisontale midterpunkt som teksten */
 }
 
-@media (max-width: 390px) {
+@media (max-width: 1200px) {
     body {
         margin-left: 10px; /* Angiver ny margin for mobil-version*/
         margin-right: 10px;
     }
 
     .overskriftPaaSide {
-        font-size: 39px;
-        margin-bottom: 40px;
+        font-size: 39px; /* De øverste overskrifter får en anden skriftstørrelse */
+        margin-bottom: 40px; /* Hver overskrift har 40px ned til nedstående elementer */
+    }
+
+    .bindestreg {
+        width: 12px; /* Ændrer længden på den blå bindestreg*/
     }
 }
 
@@ -93,22 +97,37 @@ a {
     gap: 5px; /* Skaber en afstand mellem bindestreg og tekst */
 }
 
-@media (max-width: 390px) {
+.listeelement p {
+    font-size: 25px; /* Teksterne får en bestemt skriftstørrelse */
+    gap: 10px; /* Tekststykkerne får en afstand imellem sig*/
+}
 
+@media (max-width: 1200px) {
     #burgermenu {
         display: block;
-    }
-
-    .logo {
-        font-size: 20px;
     }
 
     .navigationslinje {
         display: none;
     }
 
+    .logo {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    #burgermenu {
+        display: block;
+    }
+
     .horisontal-linje, .horisontal-linje-footer {
         margin: 0 -10px 30px; /* Ændrer margin for linjerne */
+    }
+
+    .listeelement p {
+        font-size: 15px;
     }
 
 }
@@ -136,22 +155,22 @@ a {
     height: 82px; /* Er nødvenidig, da telefonen har andre dimensioner */
 }
 
-.mailFooterTekst {
-    margin-top: -5px; /* Sikrer, at teksten står på linje med andet tekst i footer*/
-}
-
-@media (max-width: 390px) {
+@media (max-width: 1000px) {
     .footer {
-        flex-direction: column;
+        flex-direction: column; /* Står i kolonne i stedet for på linje/række*/
     }
 
     .footer img {
-        width: 41px;
-        max-height: 42px;
+        width: 41px; /* Størrelsen på ikonerne ændres */
+        max-height: 41px;
+        margin-top: 10px; /* Der skabes afstand mellem ikoner og tekst */
     }
+}
+
+@media (max-width: 390px) {
 
     .footerIkonOgTekst {
-        flex-direction: row;
+        flex-direction: row; /* Elementerne placeres på horisontal linje */
     }
 
     .horisontal-linje-footer {
@@ -184,12 +203,18 @@ a {
     gap: 30px; /* Skaber afstand mellem pil og tekst på forsiden */
 }
 
-@media (max-width: 390px) {
+@media (max-width: 1100px) {
     #forsideIndhold {
         flex-direction: column; /* Indhold placeres i kolonne i stedet for række */
         align-items: center; /* Indholdet placeret i midten af siden */
     }
 
+    #forsidebillede {
+        align-items: center;
+    }
+}
+
+@media (max-width: 640px) {
     #forsidebillede {
         width: 370px; /* skærmensbredde - margin = bredden -> 390 - (10*2) = 370px*/
     }
@@ -206,7 +231,6 @@ a {
     .forsidelinkOgPil img {
         width: 40px;
     }
-   
 }
 
 /* ---------------- STYLING AF PROJEKTER ---------------- */
@@ -246,7 +270,15 @@ a {
     margin-top: -27px; /* Placerer pilen på samme grundlinje som billedet */
 }
 
-@media (max-width: 390px) {
+@media (max-width: 1396px) {
+
+    .indholdProjekter h3 {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 700px) {
     #topProjekt {
         margin: 0; /* Nulstiller margin på det øverste projekt*/
     }
@@ -328,6 +360,63 @@ a {
     height: 500px; /* Billederne får en bestemt størrelse*/
     width: 388px;
 }
+
+@media (max-width: 1500px) {
+    .projektbilleder {
+        flex-direction: column; /* Placerer billederne over hinanden */
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .projektbillederIphone {
+        height: 600px;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .projektbillederIphone {
+        height: 338px;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .projektbilleder {
+        flex-direction: column; /* Placerer billederne over hinanden */
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .projektbilleder img{
+        width: 370px; /* Billederne får samme bredde som skærmen minus margin*/
+    }
+
+    #ipadBillederSteno {
+        width: 370px; /* Angiver bredden på billedet */
+    }
+
+    .overskriftOgTekstProjekt h3 {
+        font-size: 20px; /* Giver en anden skriftstørrelse */
+        margin-top: 20px; /* Skaber afstand til ovenstående elementer*/
+    }
+
+    .overskriftOgTekstProjekt p {
+        font-size: 15px;
+    }
+
+    .projektbillederIphone {
+        height: 338px;
+    }
+
+    #billedegalleriSteno img{
+        margin-top: 10px;
+    }
+
+}
 /* ---------------- STYLING AF OM ---------------- */
 
 .broedTekstOm{
@@ -339,14 +428,9 @@ a {
 }
 
 .billederPaaLinje {
-    display: flex; /* Billederne placeres på lije */
+    display: flex; /* Billederne placeres på linje */
     justify-content: space-between; /* Billederne får lige meget plads omkring sig */
     margin: 18px 0; /* Billederne får en afstand på 18px til top og bund*/
-}
-
-.listeelement p {
-    font-size: 25px; /* Teksterne får en bestemt skriftstørrelse */
-    gap: 10px; /* Tekststykkerne får en afstand imellem sig*/
 }
 
 #omMig {
@@ -365,6 +449,44 @@ a {
 
 .figur {
     width: 300px; /* Figuren får en bredde på 300px */
+}
+
+@media (max-width: 1076px) {
+    #billedegalleriOm img {
+        width: 280px; /* Bredden på billederne passer til skærmstørrelsen - 20px */
+        margin: 5px 0; /* Skaber en afstand mellem billederne på 10px*/
+    }
+}
+
+@media (max-width: 766px) {
+    #billedegalleriOm img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 527px) {
+
+    .broedTekstOm {
+        font-size: 15px; /* Brødteksten på siden om får en mindre skriftstørrelse */
+    }
+
+    #billedegalleriOm img {
+        width: 370px; /* Bredden på billederne passer til skærmstørrelsen - 20px */
+        margin: 5px 0; /* Skaber en afstand mellem billederne på 10px*/
+    }
+
+    .billederPaaLinje {
+        flex-direction: column; /* Indholdet stilles på vertikal linje */
+        margin: 0; /* Al margin hertil nulstilles */
+    }
+
+    #omMig h3 {
+        font-size: 20px; /* Underoverskrifterne på siden om.html får ny skriftstørrelse */
+    }
+
+    .figur {
+        width: 100px; /* Figuren får en ny størrelse */
+    }
 }
 
 /* ---------------- STYLING AF KONTAKT ---------------- */
@@ -393,4 +515,21 @@ a {
     align-self: flex-start; /* Holder billedet i toppen */
 }
 
+@media (max-width: 390px) {
+    .ikonOgTekst {
+        display: none; /* Ikoner og tekst er ikke vist, da dette er at finde i footer */
+    }
+
+    #kontaktIndhold p {
+        font-size: 15px; /* Fontstørrelsen */
+    }
+
+    #kontaktIndhold {
+        flex-direction: column; /* Indholdet står på en vertikal linje i stedet for horisontal */
+    }
+
+    #kontaktbillede {
+        width: 370px; /* Billedet passer til skærmenstørrelsen - 20px*/
+    }
+}
 
