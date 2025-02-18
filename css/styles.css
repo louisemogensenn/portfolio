@@ -41,10 +41,22 @@ a {
     align-self: center; /* Placerer bindestregen med samme horisontale midterpunkt som teksten */
 }
 
+@media (max-width: 390px) {
+    body {
+        margin-left: 10px; /* Angiver ny margin for mobil-version*/
+        margin-right: 10px;
+    }
+
+    .overskriftPaaSide {
+        font-size: 39px;
+        margin-bottom: 40px;
+    }
+}
+
 /* ---------------- STYLING AF HEADER ---------------- */
 
 #burgermenu {
-    display: none;
+    display: none; /* Burgermenuen skjultet i default */
 }
 
 .menulinje {
@@ -57,8 +69,6 @@ a {
 
 .logo {
     font-size: 40px;
-    display: flex; /* Sørger for, at elementerne er på samme række */
-    align-items: flex-end; /* Flytter alle elementer NED, så de flygter på grundlinjen */
 }
 
 .navigationslinje {
@@ -69,8 +79,6 @@ a {
 
 .navigationslinje a:hover {
     color: var(--sekundaerFarve); /* Angiver farven ved hover */
-    /* font-weight: bold; */
-    /* text-decoration: underline 2px solid; */
     cursor: pointer;
 }
 
@@ -86,13 +94,23 @@ a {
 }
 
 @media (max-width: 390px) {
+
     #burgermenu {
         display: block;
+    }
+
+    .logo {
+        font-size: 20px;
     }
 
     .navigationslinje {
         display: none;
     }
+
+    .horisontal-linje, .horisontal-linje-footer {
+        margin: 0 -10px 30px; /* Ændrer margin for linjerne */
+    }
+
 }
 
 /* ---------------- STYLING AF FOOTER ---------------- */
@@ -120,6 +138,25 @@ a {
 
 .mailFooterTekst {
     margin-top: -5px; /* Sikrer, at teksten står på linje med andet tekst i footer*/
+}
+
+@media (max-width: 390px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer img {
+        width: 41px;
+        max-height: 42px;
+    }
+
+    .footerIkonOgTekst {
+        flex-direction: row;
+    }
+
+    .horisontal-linje-footer {
+        margin: 30px -10px 20px; /* Ændrer margin for linjerne */
+    }
 }
 
 /* ---------------- STYLING AF INDEX ---------------- */
@@ -154,13 +191,22 @@ a {
     }
 
     #forsidebillede {
-        width: 656px; /* Bredden på siden, hvor indholdet ønskes */
+        width: 370px; /* skærmensbredde - margin = bredden -> 390 - (10*2) = 370px*/
     }
 
     .forsidelinkOgPil {
-        width: 656px; /* Sikrer, at teksten og pilen fylder hele muligheden*/
         justify-content: space-between;
     }
+
+    #forsideNavigation {
+        font-size: 40px;
+        width: 370px;
+    }
+
+    .forsidelinkOgPil img {
+        width: 40px;
+    }
+   
 }
 
 /* ---------------- STYLING AF PROJEKTER ---------------- */
@@ -200,8 +246,36 @@ a {
     margin-top: -27px; /* Placerer pilen på samme grundlinje som billedet */
 }
 
-.projektBillede {
-    border: 2px solid var(--sekundaerFarve); /* Laver en blå kant omkring billedet i oversigten over projekter*/
+@media (max-width: 390px) {
+    #topProjekt {
+        margin: 0; /* Nulstiller margin på det øverste projekt*/
+    }
+
+    .indholdProjekter {
+        flex-direction: column;
+    }
+
+    .indholdProjekter img {
+        width: 370px;
+        height: 245px;
+    }
+
+    .linjeMellemProjekter {
+        border: 0.5px solid; /* Tykkelsen på stregen */
+        margin: 20px 0; /* Giver linjen en margin (pladsen omkring sig) på 62px */
+    }
+    
+    .tekstProjekter {
+        margin: 0;
+    }
+
+    .tekstProjekter h3 {
+        font-size: 20px; /* Overskrifterne for hvert projekt får en skriftstørrelse */
+    }
+    
+    .tekstProjekter p {
+        font-size: 15px; /* Underoverskrifterne får en skriftstørrelse */
+    }
 }
 
 /* ---------------- STYLING AF PROJEKT ---------------- */
