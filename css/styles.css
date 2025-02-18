@@ -132,7 +132,7 @@ a {
 
 /* ---------------- STYLING AF PROJEKTER ---------------- */
 #topProjekt {
-    margin-top: 50px; /* Det øverste projekt placeres 50px fra overskriften */
+    margin-top: 100px; /* Det øverste projekt placeres 50px fra overskriften */
 }
 
 .indholdProjekter {
@@ -221,7 +221,6 @@ a {
     height: 500px; /* Billederne får en bestemt størrelse*/
     width: 388px;
 }
-
 /* ---------------- STYLING AF OM ---------------- */
 
 .broedTekstOm{
