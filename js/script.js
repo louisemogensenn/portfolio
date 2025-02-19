@@ -13,7 +13,7 @@ forsidebillede.addEventListener('mouseleave', () => { // En eventListener, der v
 
 // Script til burgermenu
 
-const burgermenu = document.getElementById('burgermenu'); // Henter HTML-elementet med ID'et
+const burgermenu = document.querySelector('.burgermenu'); // Henter HTML-elementet med ID'et
 
         const lukBurgermenu = document.getElementById('lukBurgermenu');
 

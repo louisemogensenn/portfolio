@@ -59,7 +59,7 @@ a {
 
 /* ---------------- STYLING AF HEADER ---------------- */
 
-#burgermenu {
+.burgermenu {
     display: none; /* Burgermenuen skjultet i default */
 }
 
@@ -137,7 +137,7 @@ a {
     justify-content: space-between; /* Links og pile placeres i hver sin side */
 }
 
-#burgermenu {
+.burgermenu {
     cursor: pointer; /* Ved hover kommer en pointer så det er synligt, at elementet er klikbart*/
 }
 
@@ -155,7 +155,7 @@ a {
 
 
 @media (max-width: 1200px) {
-    #burgermenu {
+    .burgermenu {
         display: block;
     }
 
@@ -170,7 +170,7 @@ a {
 
 @media (max-width: 390px) {
 
-    #burgermenu {
+    .burgermenu {
         display: block;
     }
 
