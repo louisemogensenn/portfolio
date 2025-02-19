@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgermenu</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Linkter til den samlede CSS -->
+
+    <style>
+
+        .menuIndhold {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #f5f3ec;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .menuIndhold.aktiv {
+            display: flex;
+        }
+        
+        #lukBurgermenu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        
+        .navigationsmenu a {
+            text-decoration: none;
+            color: black;
+            font-size: 32px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 200px;
+            padding: 10px 0;
+        }
+        
+        #burgermenu {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .burgermenuIndhold {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .burgermenuIndhold img {
+            width: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <img id="burgermenu" src="images/burgermenu.svg" alt="Burgermenu" style="width: 30px;">
+    
+    <aside class="menuIndhold" id="navigationsmenu">
+        <div id="lukBurgermenu"><img src="images/krydsIkon.svg" alt="Luk burgermenu" style="width: 30px;"></div>
+        <nav>
+            <aside class="burgermenuIndhold">
+                <a href="index.html">forside</a>
+                <a href="index.html"><img src="images/pil.svg" alt="Pil til forside"></a>
+            </aside>
+
+            <aside class="burgermenuIndhold">
+                <a href="index.html">projekter</a>
+                <a href="index.html"><img src="images/pil.svg" alt="Pil til projekter"></a>
+            </aside>
+
+            <aside class="burgermenuIndhold">
+                <a href="index.html">om</a>
+                <a href="index.html"><img src="images/pil.svg" alt="Pil til om"></a>
+            </aside>
+
+            <aside class="burgermenuIndhold">
+                <a href="index.html">kontakt</a>
+                <a href="index.html"><img src="images/pil.svg" alt="Pil til kontakt"></a>
+            </aside>
+
+        </nav>
+    </aside>
+    
+    <script>
+
+        const burgermenu = document.getElementById('burgermenu'); // Henter HTML-elementet med ID'et
+
+        const lukBurgermenu = document.getElementById('lukBurgermenu');
+
+        burgermenu.addEventListener('click', () => {
+            document.getElementById("navigationsmenu").classList.add("aktiv");
+        })
+
+        lukBurgermenu.addEventListener('click', () => {
+            document.getElementById("navigationsmenu").classList.remove("aktiv");
+        })
+            
+    </script>
+</body>
+</html>

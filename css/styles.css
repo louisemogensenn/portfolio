@@ -102,6 +102,58 @@ a {
     gap: 10px; /* Tekststykkerne får en afstand imellem sig*/
 }
 
+/* ---------------- STYLING AF BURGERMENU ---------------- */
+
+.menuIndhold {
+    position: fixed; /* Menuen vises i hele vinduet */
+    top: 0; /* Burgermenuen er placeret i toppen af skærmen */
+    right: 0; /* Burgermenue starter ved kanten af højre side*/
+    width: 100%; /* Burgermenuen fylder 100% af bredden */
+    height: 100%; /* Burgermenuen fylder 100% af højden */
+    background-color: #fff; /* Sikrer, at baggrunden ikke er gennemsigtig */
+    display: none; /* Indholdet vises ikke i default */
+    flex-direction: column; /* Elementeren står oven på hianden*/
+    justify-content: center; /* Det hele er placeret i midten vertikalt */
+    align-items: stretch; /* Indholdet fylder hele containeren */
+    z-index: 1000;
+}
+
+.menuIndhold.aktiv {
+    display: flex; /* Når klassen aktiv tilføjet vises indoldet i menuen*/
+}
+
+#lukBurgermenu {
+    position: absolute; /* Placeres relativt til .menuIndhold */
+    top: 40px; /* Justér efter behov, så det matcher burgermenu-ikonet */
+    right: 75px; /* Samme margen som .burgermenuIndhold */
+    cursor: pointer; 
+    width: 50px; /* Sørg for, at størrelsen matcher burgermenuen */
+}
+
+.navigationsmenu a {
+    /* text-decoration: none; */
+    display: flex;
+    align-items: center; /* Elementerne er på samme linje */
+    justify-content: space-between; /* Links og pile placeres i hver sin side */
+}
+
+#burgermenu {
+    cursor: pointer; /* Ved hover kommer en pointer så det er synligt, at elementet er klikbart*/
+}
+
+.burgermenuIndhold {
+    display: flex; /* Elementerne placeres på række */
+    justify-content: space-between; /* Elementerne fylder hele containren*/
+    align-items: center; /* Elementerne står på samme linje */
+    margin: 0 75px;
+    font-size: 35px;
+}
+
+.burgermenuIndhold img {
+    width: 50px; /* Pileness størrelse */
+}
+
+
 @media (max-width: 1200px) {
     #burgermenu {
         display: block;
@@ -128,6 +180,11 @@ a {
 
     .listeelement p {
         font-size: 15px;
+    }
+
+    #lukBurgermenu { /* Sikrer, at krydset er præcist oven på burgermenuen*/
+        right: -10px; /* Flytter det tættere på kanten */
+        top: 45px; /* Justerer højden lidt */
     }
 
 }
@@ -532,4 +589,3 @@ a {
         width: 370px; /* Billedet passer til skærmenstørrelsen - 20px*/
     }
 }
-
