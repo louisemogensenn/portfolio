@@ -6,6 +6,16 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 
+import UnderConstruction from './components/UnderConstruction';
+
+function App() {
+    return <UnderConstruction />;
+}
+
+export default App;
+
+/*
+
 const Router = createBrowserRouter([
   {
     path: "/",
@@ -35,3 +45,4 @@ const Router = createBrowserRouter([
 export default function App() {
   return <RouterProvider router={Router} />;
 }
+*/
