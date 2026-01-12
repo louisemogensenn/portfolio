@@ -7,6 +7,7 @@ export default function UnderConstruction() {
             <p className="font-helvetica text-lg text-center max-w-md">
                 Siden er i øjeblikket under opdatering. 
                 Kom snart tilbage for at se det nye design.
+                pusid.
             </p>
             
             {/* Optional: Tilføj animation */}
