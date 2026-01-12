@@ -1,8 +1,10 @@
+import Paragraph from "../components/Paragraph";
+
 export default function About() {
     return (
-        <div>
+        <div className="w-[90%] mx-auto">
         <h1>About Us</h1>
-        <p>This is the about page of our application.</p>
+        <Paragraph text="Welcome to the about page! Welcome to the about page! Welcome to the about page! Welcome to the about page! Welcome to the about page! Welcome to the about page!" />
         </div>
     );
     }
