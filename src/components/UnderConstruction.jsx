@@ -1,6 +1,6 @@
 export default function UnderConstruction() {
     return (
-        /*
+
         <div className="min-h-screen flex flex-col items-center justify-center px-4">
             <h1 className="font-playfair text-[60px] text-center mb-6">
                 Under ombygning
@@ -16,8 +16,6 @@ export default function UnderConstruction() {
                 <div className="w-3 h-3 bg-black rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
             </div>
         </div>
-        */
-       
-       <h1>Under construction</h1>
+
     );
 }

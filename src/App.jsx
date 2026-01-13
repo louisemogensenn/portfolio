@@ -7,16 +7,17 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import CurrentProject from "./pages/CurrentProject";
 import TrustCenter from "./pages/TrustCenter";
-// import UnderConstruction from './components/UnderConstruction';
+import UnderConstruction from './components/UnderConstruction';
 
-/*
+
 function App() {
     return <UnderConstruction />;
 }
 
 export default App;
-*/
 
+
+/*
 const Router = createBrowserRouter([
   {
     path: "/",
@@ -56,3 +57,5 @@ const Router = createBrowserRouter([
 export default function App() {
   return <RouterProvider router={Router} />;
 }
+
+*/
