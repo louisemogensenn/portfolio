@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 export default function TrustCenter() {
     return(
-        <section className="w-[90%] mx-auto">
-            <img src={TrustCenterImage} alt="Trust Center Projekt" className="mx-auto"/>
+        <section className="w-[90%] mx-auto max-w-2xl">
+            <img src={TrustCenterImage} alt="Trust Center Projekt" className="w-full"/>
             <Heading text="Trust Center"/>
             <Paragraph text="Løsningen er udviklet i samarbejdet med .legal, hvor jeg i forbindelse med mit studie var i praktik. "/>
             <Paragraph text="Et Trust Center løser den tunge manuelle håndtering  af compliance-dokumentation, og fungerer som central for opbevaring heraf."/>
@@ -16,7 +16,7 @@ export default function TrustCenter() {
             <Paragraph text="Jeg er i udviklingen blevet meget klogere på React og de muligheder, den komponentbaserede tilgang giver. Det er netop denne årsag, der gør, at React er mit foretrukne framework at arbejde i."/>
             <section className="flex justify-center gap-10.5 mt-11.5">
                 <Button text="Se GitHub" to="https://github.com/louisemogensenn/hovedopgave" filled={true} />
-                <Button text="Se website" to="https://trustcenter.louisemogensen.dk/om" filled={false} />
+                <Button text="Se website" to="https://trustcenter.louisemogensen.dk" filled={false} />
             </section>
 
         <section className="text-center">

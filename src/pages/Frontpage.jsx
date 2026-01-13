@@ -5,8 +5,8 @@ import Button from '../components/CallToAction';
 
 export default function Frontpage() {
     return (
-        <section className="w-[90%] mx-auto">
-        <img src={louiseMogensen} alt="Billede af Louise Mogensen" />
+        <section className="w-[90%] mx-auto max-w-2xl">
+        <img src={louiseMogensen} alt="Billede af Louise Mogensen" className="w-full" />
         <Heading text="Hvem er jeg?" />
         <Paragraph text="Jeg hedder Louise, jeg er 26 år gammel og er uddannet multimediedesigner med flair for frontend-udvikling. I forbindelse med mit studie har jeg fået en stor nysgerrighed for udvikling, der skaber en reel værdi for brugerne."/>
         <Paragraph text="Jeg har opnået erfaring med HTML, CSS og JavaScript, herunder biblioteket React som er mit nuværende foretrukne framework at arbejde i." />
@@ -14,10 +14,10 @@ export default function Frontpage() {
         <Paragraph text="Har du lyst til at høre mere om, hvordan jeg kan byde positivt ind hos jer må du endelig kontakte mig!"/>
 
         <section className="flex justify-center gap-10.5 mt-11.5">
-            <Button text="Se projekter" to="https://github.com/louisemogensenn/hovedopgave" filled={true} />
-            <Button text="Kontakt" to="https://trustcenter.louisemogensen.dk/om" filled={false} />
+            <Button text="Se projekter" to="/projects" filled={true} />
+            <Button text="Kontakt" to="/contact" filled={false} />
         </section>
 
         </section>
     );
-    }
+}

@@ -7,17 +7,19 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import CurrentProject from "./pages/CurrentProject";
 import TrustCenter from "./pages/TrustCenter";
+import FrontendProject from "./pages/FrontendProject";
+import SustainableWebdesign from "./pages/SustainableWebdesign";
 import UnderConstruction from './components/UnderConstruction';
 
-
+/*
 function App() {
     return <UnderConstruction />;
 }
 
 export default App;
+*/
 
 
-/*
 const Router = createBrowserRouter([
   {
     path: "/",
@@ -43,6 +45,16 @@ const Router = createBrowserRouter([
       },
 
       {
+        path: '/frontendProject',
+        element: <FrontendProject />, // Komponentet Om vises, når brugeren navigerer til /om
+      },
+
+      {
+        path: '/sustainableWebdesign',
+        element: <SustainableWebdesign />, // Komponentet Om vises, når brugeren navigerer til /om
+      },
+
+      {
         path: '/about',
         element: <About />, // Komponentet GDPR vises, når brugeren navigerer til /gdpr
       },
@@ -58,4 +70,3 @@ export default function App() {
   return <RouterProvider router={Router} />;
 }
 
-*/

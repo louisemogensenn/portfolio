@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 export default function Contact() {
     return (
-        <section className="w-[90%] mx-auto">
-            <img src={louiseMogensen} alt="Billede af Louise Mogensen" />
+        <section className="w-[90%] mx-auto max-w-2xl">
+            <img src={louiseMogensen} alt="Billede af Louise Mogensen" className="w-full" />
             <Heading text="Hvem er jeg?" />
             <Paragraph text="Hvis du synes mine projekter og min profil lyder spændende, så ring endelig til mig eller skriv en mail!"/>
             

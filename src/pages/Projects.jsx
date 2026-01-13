@@ -5,7 +5,7 @@ import arrow from '../assets/arrow.svg';
 
 export default function Projects() {
     return (
-        <div className="w-[90%] mx-auto">
+        <div className="w-[90%] mx-auto max-w-2xl">
             <Link to="/trustCenter">
                 <section className="flex justify-between">
                     <div>
@@ -20,7 +20,7 @@ export default function Projects() {
 
             <br></br>
 
-            <Link to="#">
+            <Link to="/frontendProject">
                 <section className="flex justify-between">
                     <div>
                         <Heading text="Frontend Specialisering" />
@@ -34,7 +34,7 @@ export default function Projects() {
 
             <br></br>
 
-            <Link to="#">
+            <Link to="/sustainableWebdesign">
                 <section className="flex justify-between">
                     <div>
                         <Heading text="Bæredygtigt Webdesign" />
