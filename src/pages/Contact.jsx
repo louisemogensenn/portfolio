@@ -1,8 +1,26 @@
+import louiseMogensen from '../assets/louiseMogensen.jpeg';
+import Heading from '../components/Heading';
+import Paragraph from '../components/Paragraph';
+import { Link } from 'react-router-dom';
+
 export default function Contact() {
     return (
-        <div className="w-[90%] mx-auto">
-        <h1>Contact Us</h1>
-        <p>This is the contact page of our application.</p>
-        </div>
+        <section className="w-[90%] mx-auto">
+            <img src={louiseMogensen} alt="Billede af Louise Mogensen" />
+            <Heading text="Hvem er jeg?" />
+            <Paragraph text="Hvis du synes mine projekter og min profil lyder spændende, så ring endelig til mig eller skriv en mail!"/>
+            
+            <Heading text="Telefon" />
+            <Paragraph text="+45 50 42 17 00" />
+            
+            <Heading text="Mail" />
+            <Paragraph text="louisemogensen@outlook.dk" />
+
+            <div className="flex justify-center">
+                <Link to="https://www.linkedin.com/in/louise-mogensen-a4139324a/" className={"w-50 h-10 text-base font-helvetica transition-all duration-300 inline-flex items-center justify-center rounded-[50px] bg-white text-black border border-black hover:bg-gray-100"}>
+                Fang mig på LinkedIn
+                </Link>
+            </div>
+        </section>
     );
-    }
+}

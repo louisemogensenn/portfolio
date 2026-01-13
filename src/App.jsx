@@ -5,16 +5,17 @@ import Frontpage from "./pages/Frontpage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import CurrentProject from "./pages/CurrentProject";
+import TrustCenter from "./pages/TrustCenter";
+// import UnderConstruction from './components/UnderConstruction';
 
-import UnderConstruction from './components/UnderConstruction';
-
+/*
 function App() {
     return <UnderConstruction />;
 }
 
 export default App;
-
-/*
+*/
 
 const Router = createBrowserRouter([
   {
@@ -28,6 +29,16 @@ const Router = createBrowserRouter([
       {
         path: '/projects',
         element: <Projects />, // Komponentet Om vises, når brugeren navigerer til /om
+      },
+
+      {
+        path: '/currentProject',
+        element: <CurrentProject />, // Komponentet Om vises, når brugeren navigerer til /om
+      },
+
+      {
+        path: '/trustCenter',
+        element: <TrustCenter />, // Komponentet Om vises, når brugeren navigerer til /om
       },
 
       {
@@ -45,4 +56,3 @@ const Router = createBrowserRouter([
 export default function App() {
   return <RouterProvider router={Router} />;
 }
-*/

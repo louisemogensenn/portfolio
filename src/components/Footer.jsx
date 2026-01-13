@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
-        <footer className="w-full py-8">
+        <footer className="w-full py-8 mt-28.5">
             {/* Øverste streg */}
             <hr className="border-t border-black mb-6" />
             

@@ -1,6 +1,7 @@
 import louiseMogensen from '../assets/louiseMogensen.jpeg';
 import Heading from '../components/Heading';
 import Paragraph from '../components/Paragraph';
+import Button from '../components/CallToAction';
 
 export default function Frontpage() {
     return (
@@ -11,6 +12,12 @@ export default function Frontpage() {
         <Paragraph text="Jeg har opnået erfaring med HTML, CSS og JavaScript, herunder biblioteket React som er mit nuværende foretrukne framework at arbejde i." />
         <Paragraph text="Jeg nyder at udfordre mig selv og ønsker at opnå kendskab til flere frameworks, så min arbejdspalette bliver endnu bredere. Jeg har en stor lyst til at udvide mine kompetencer, så jeg kan blive endnu mere dygtig. Jeg kan byde ind med højt engagement og et stort bidrag i projekter."/>
         <Paragraph text="Har du lyst til at høre mere om, hvordan jeg kan byde positivt ind hos jer må du endelig kontakte mig!"/>
+
+        <section className="flex justify-center gap-10.5 mt-11.5">
+            <Button text="Se projekter" to="https://github.com/louisemogensenn/hovedopgave" filled={true} />
+            <Button text="Kontakt" to="https://trustcenter.louisemogensen.dk/om" filled={false} />
+        </section>
+
         </section>
     );
     }
