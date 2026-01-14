@@ -9,6 +9,7 @@ import CurrentProject from "./pages/CurrentProject";
 import TrustCenter from "./pages/TrustCenter";
 import FrontendProject from "./pages/FrontendProject";
 import SustainableWebdesign from "./pages/SustainableWebdesign";
+import CV from "./pages/CV";
 import UnderConstruction from './components/UnderConstruction';
 
 /*
@@ -61,6 +62,11 @@ const Router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />, // Komponentet ItSikkerhed vises, når brugeren navigerer til /itSikkerhed
+      },
+
+      {
+        path: '/cv',
+        element: <CV />, // Komponentet ItSikkerhed vises, når brugeren navigerer til /itSikkerhed
       },
     ],
   },

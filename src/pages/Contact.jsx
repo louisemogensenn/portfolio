@@ -11,10 +11,14 @@ export default function Contact() {
             <Paragraph text="Hvis du synes mine projekter og min profil lyder spændende, så ring endelig til mig eller skriv en mail!"/>
             
             <Heading text="Telefon" />
-            <Paragraph text="+45 50 42 17 00" />
+            <Link to="tel:+4550421700">
+                <Paragraph text="+45 50 42 17 00" />
+            </Link>
             
             <Heading text="Mail" />
-            <Paragraph text="louisemogensen@outlook.dk" />
+            <Link to="mailto:louisemogensen@outlook.dk">
+                <Paragraph text="louisemogensen@outlook.dk" />
+            </Link>
 
             <div className="flex justify-center">
                 <Link to="https://www.linkedin.com/in/louise-mogensen-a4139324a/" className={"w-50 h-10 text-base font-helvetica transition-all duration-300 inline-flex items-center justify-center rounded-[50px] bg-white text-black border border-black hover:bg-gray-100"}>

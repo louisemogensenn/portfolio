@@ -34,6 +34,7 @@ export default function Navigation() {
                         <Link to="/projects" className="text-lg hover:text-gray-400 transition-colors" onClick={toggleMenu}><h2>projekter</h2></Link>
                         <Link to="/about" className="text-lg hover:text-gray-400 transition-colors" onClick={toggleMenu}><h2>om</h2></Link>
                         <Link to="/contact" className="text-lg hover:text-gray-400 transition-colors" onClick={toggleMenu}><h2>kontakt</h2></Link>
+                        <Link to="/cv" className="text-lg hover:text-gray-400 transition-colors" onClick={toggleMenu}><h2>cv</h2></Link>
                     </nav>
                 </div>
             </div>

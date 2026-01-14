@@ -12,9 +12,9 @@ export default function About() {
             <Paragraph text="Jeg er 26 år gammel, jeg er oprindeligt fra Hinnerup (ca. 20km nord for Aarhus) og er altså østjyde helt ind til benet. Jeg er bosat i Aarhus C med min kæreste, og her har vi boet i lidt over fem år. Jeg er ansat i DK Company i Magasin, hvor jeg et par timer om ugen sælger tøj (og så køber jeg også selv en del, ups). Det har været en afveksling fra studiet, hvilket jeg har sat stor pris på."/>
 
             <section className="text-center gap-10.5 mt-11.5">
-                <Button text="Download CV" to="https://github.com/louisemogensenn/hovedopgave" filled={true} />
+                <Button text="Se mit CV" to="/cv" filled={true} />
                 <br /><br />
-                <p className="italic font-light">Jeg har gjort det kort og godt i mit CV som du kan downloade som PDF.</p>
+                <p className="italic font-light">Jeg har gjort det kort og godt i mit CV.</p>
             </section>
 
             <br /><br /><br />
