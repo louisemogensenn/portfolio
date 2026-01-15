@@ -116,7 +116,7 @@ export default function CV() {
                         <section className="mb-6 pb-6 border-b border-gray-200">
                             <section className="flex justify-between items-start mb-2">
                                 <h3 className="font-medium">Salgsassistent</h3>
-                                <span className="font-thin italic text-sm">november 2025 - Nu</span>
+                                <span className="font-thin italic text-sm">november 2024 - Nu</span>
                             </section>
                             <p className="font-thin mb-2">DK Company, Magasin</p>
                             <p className="font-thin text-sm">
