@@ -187,7 +187,7 @@ export default function CV() {
                         <section className="mb-6 pb-6 border-b border-gray-200">
                             <section className="flex justify-between items-start mb-2">
                                 <h3 className="font-medium">Datamatiker</h3>
-                                <span className="font-thin italic text-sm">august 2023 - juli 2024 (afbrudt)</span>
+                                <span className="font-thin italic text-sm">august 2022 - juli 2023 (afbrudt)</span>
                             </section>
                             <p className="font-thin mb-2">Erhvervsakademi Aarhus</p>
                             <p className="font-thin text-sm">Jeg har gået et år på datamatikerstudiet, hvor jeg lærte at kode Java, SQL samt erfaring med fagene Forretning og IT og Systemudvikling. Jeg valgte at afbryde uddannelsen efter flere samtaler med studievejleder. Jeg søgte i stedet multimediedesigner for at få mere visuelt at arbejde med i min udvikling.</p>
