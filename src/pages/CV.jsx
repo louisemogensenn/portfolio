@@ -130,7 +130,7 @@ export default function CV() {
                             </section>
                             <p className="font-thin mb-2">.legal</p>
                             <p className="font-thin text-sm">
-                                Jeg har i forbindelse med mit studie været i praktik i virksomheden .legal, der tilbyder en compliance-platform til at understøtte en nem og overkommelig håndtering af compliance. Her har jeg fået mulighed for at arbejde med udvikling af komponenter, der skal benyttes på deres hjemmeside. Blandt andet har jeg udviklet et FAQ-modul, der skal understøtte informerende artikler på deres hjemmeside. Jeg skrev desuden hovedopgave i virksomheden. Her udviklede jeg et Trust Center, og det kan du læse mere mere om <a href="/trustCenter" className="underline">her!</a>
+                                Jeg har i forbindelse med mit studie været i praktik i virksomheden .legal, der tilbyder en compliance-platform til at understøtte en nem og overkommelig håndtering af compliance. Her har jeg fået mulighed for at arbejde med udvikling af komponenter, der skal benyttes på deres hjemmeside. Blandt andet har jeg udviklet et FAQ-modul, der skal implementeres i informerende artikler på deres hjemmeside. Jeg skrev desuden hovedopgave i virksomheden. Her udviklede jeg et Trust Center, og det kan du læse mere mere om <a href="/trustCenter" className="underline">her!</a>
                             </p>
                         </section>
 
