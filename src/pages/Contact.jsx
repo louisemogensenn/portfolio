@@ -7,8 +7,8 @@ export default function Contact() {
     return (
         <section className="w-[90%] mx-auto max-w-2xl">
             <img src={louiseMogensen} alt="Billede af Louise Mogensen" className="w-full" />
-            <Heading text="Hvem er jeg?" />
-            <Paragraph text="Hvis du synes mine projekter og min profil lyder spændende, så ring endelig til mig eller skriv en mail!"/>
+            <Heading text="Kontakt mig" />
+            <Paragraph text="Hvis du synes mine projekter og min profil lyder spændende, så ring endelig til mig eller skriv en mail! Jeg vil elske at høre fra dig."/>
             
             <Heading text="Telefon" />
             <Link to="tel:+4550421700">

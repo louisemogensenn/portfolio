@@ -8,9 +8,9 @@ export default function Frontpage() {
         <section className="w-[90%] mx-auto max-w-2xl">
         <img src={louiseMogensen} alt="Billede af Louise Mogensen" className="w-full" />
         <Heading text="Hvem er jeg?" />
-        <Paragraph text="Jeg hedder Louise, jeg er 26 år gammel og er uddannet multimediedesigner med flair for frontend-udvikling. I forbindelse med mit studie har jeg fået en stor nysgerrighed for udvikling, der skaber en reel værdi for brugerne."/>
-        <Paragraph text="Jeg har opnået erfaring med HTML, CSS og JavaScript, herunder biblioteket React som er mit nuværende foretrukne framework at arbejde i." />
-        <Paragraph text="Jeg nyder at udfordre mig selv og ønsker at opnå kendskab til flere frameworks, så min arbejdspalette bliver endnu bredere. Jeg har en stor lyst til at udvide mine kompetencer, så jeg kan blive endnu mere dygtig. Jeg kan byde ind med højt engagement og et stort bidrag i projekter."/>
+        <Paragraph text="Jeg hedder Louise, jeg er 26 år gammel og er uddannet multimediedesigner. Jeg har en stor interesse i at forme og formidle brugerbehov til konkrete løsningsforslag, der løser problematikker og skaber værdi. "/>
+        <Paragraph text="Min styrke ligger i at kombinere forskellige discipliner: Jeg bruger research og brugerdefinering til at forstå de reelle behov, designer intuitive og æstetiske løsninger ud fra solide designprincipper, og implementerer løsningen gennem kode i både HTML, CSS, JavaScript og React."/>
+        <Paragraph text="Jeg nyder at udfordre mig selv og lære nyt. Jeg er ikke bange for at stille spørgsmål og dykke ned i nye emner for at dygtiggøre mig."/>
         <Paragraph text="Har du lyst til at høre mere om, hvordan jeg kan byde positivt ind hos jer må du endelig kontakte mig!"/>
 
         <section className="flex justify-center gap-10.5 mt-11.5">

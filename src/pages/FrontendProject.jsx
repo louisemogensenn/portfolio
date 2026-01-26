@@ -8,7 +8,7 @@ export default function FrontendProject() {
         <section className="w-[90%] mx-auto max-w-2xl">
             <img src={iphoneImage} alt="Trust Center Projekt" className="w-full"/>
             <Heading text="Trust Center"/>
-            <Paragraph text="Denne side er under ombygning."/>
+            <Paragraph text="I dette projekt har jeg fokuseret på at udvikel en applikation, der skal understøtte elevers læring i komplekse fag såsom filosofi. Her er Hulelignelsen brugt som eksempel til at opsætte opgaver. Løsningen er frontend-fokuseret og tager derfor udgangspunkt i et eksisterende design. Jeg har udviklet en login-baseret løsning, hvor elever kan lytte til teksten, svare på opgaver og optjene point. Disse point kan eleverne benytte i en shop til at designe deres app. Når eleven har besvaret en opgave kan underviseren læse hver elevs besvarelse og på denne vis holde overblikket over, om eleverne forstår emnet."/>
             <section className="flex justify-center gap-10.5 mt-11.5">
                 <Button text="Se GitHub" to="https://github.com/louisemogensenn/specialisering" filled={true} />
             </section>

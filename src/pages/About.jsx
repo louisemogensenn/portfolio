@@ -25,8 +25,7 @@ export default function About() {
                 <Heading text="“For det første, mens man læser, så er man i gang med en tilegnelse og en udvidelse - og man laver heller ikke ulykker imens“"/>
             </section>
             <br />
-            <Paragraph text="Og selvom det er sjovt at kode og knap så sjovt, når der kommer merge errors, så har hendes citat stor betydning. For selvom man kan lave mange fejl i sin kode, så kan man få brug for en pause og bare læse. "/>
-            <Paragraph text="Og mens jeg læser skal jeg gerne helst have en kop kaffe. Jeg elsker at lave en kop kaffe med en latte art, der ligner noget, der (nok ikke) kunne udstilles på ARoS."/>
+            <Paragraph text="Jeg vil altid gerne tilegne mig ny viden - hvad end det er på arbejdsmarkedet eller ved at læse. Og mens jeg læser skal jeg gerne helst have en kop kaffe. Jeg elsker at lave en kop kaffe med en latte art, der er bedre end den sidste."/>
 
             <img src={coffee} alt="Trust Center Projekt" className="w-full"/>
 
